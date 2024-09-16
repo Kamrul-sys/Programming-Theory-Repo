@@ -463,8 +463,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b36abe6c5d184644a361445dddc1f6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 20
-  _jumpForce: 300
+  _moveSpeed: 80
+  _jumpForce: 40
   isGrounded: 0
   rb: {fileID: 0}
 --- !u!54 &1249169729
@@ -721,8 +721,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b36abe6c5d184644a361445dddc1f6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 20
-  _jumpForce: 800
+  _moveSpeed: 40
+  _jumpForce: 100
   isGrounded: 0
   rb: {fileID: 0}
 --- !u!65 &2047053485
