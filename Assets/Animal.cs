@@ -9,9 +9,9 @@ public class Animal : MonoBehaviour
     [SerializeField]
     private float _moveSpeed=20f;
     [SerializeField]
-    private float _jumpForce=100f;
+    protected float _jumpForce=100f;
     public bool isGrounded=false;
-    public Rigidbody rb;
+    protected Rigidbody rb;
     public float MoveSpeed { 
         get{
             return _moveSpeed;
@@ -26,8 +26,8 @@ public class Animal : MonoBehaviour
         rb= gameObject.GetComponent<Rigidbody>();
     }
 
-    public void Jump(){
-        if(Input.GetKeyUp(KeyCode.Space)&&isGrounded){
+    public virtual void Jump(){
+        if(Input.GetKeyDown(KeyCode.Space)&&isGrounded){
             rb.AddForce(Vector3.up * _jumpForce ,ForceMode.Impulse);
         }
     }
